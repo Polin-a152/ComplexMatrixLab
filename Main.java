@@ -53,10 +53,8 @@ public class Main {
                 System.out.println("Ошибка: " + e.getMessage());
             }
         }
-
         input.close();
     }
-
     private static int readInt(Scanner input) {
         while (!input.hasNextInt()) {
             System.out.print("Введите целое число: ");
@@ -64,7 +62,6 @@ public class Main {
         }
         return input.nextInt();
     }
-
     private static double readDouble(Scanner input) {
         while (!input.hasNextDouble()) {
             System.out.print("Введите число (дробную часть отделяйте точкой): ");
@@ -72,7 +69,6 @@ public class Main {
         }
         return input.nextDouble();
     }
-
     private static ComplexMatrix readMatrix(Scanner input) {
         System.out.print("Количество строк: ");
         int rowCount = readInt(input);
